@@ -115,19 +115,86 @@ footer {
     display: inline-block; /* Blokknivå for knappen */
     background-color: #4CAF50; /* Grønn farge */
     color: white; /* Kvitt tekst */
-    padding: 10px 20px; /* Innvendig avstand */
+    padding: 12px 24px; /* Innvendig avstand */
     text-decoration: none; /* Fjern understreking */
     text-transform: uppercase; /* Store bokstavar */
     font-weight: bold; /* Fet tekst */
-    border-radius: 5px; /* Runde hjørner */
+    font-size: 1em; /* Standard tekststorleik */
+    border: none; /* Fjern kantlinje */
+    border-radius: 8px; /* Runde hjørner */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skugge for dybdeeffekt */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Effekt ved hover */
+    cursor: pointer; /* Endre musepeikar til hand */
 }
 
 .button:hover {
     background-color: #388E3C; /* Mørkare grønn ved hover */
     transform: translateY(-3px); /* Løft knappen litt opp */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sterkare skugge ved hover */
+}
+
+.button:active {
+    background-color: #2E7D32; /* Enda mørkare grønn ved klikk */
+    transform: translateY(0); /* Fjern løft ved klikk */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Mindre skugge ved klikk */
+}
+
+/* Design for knappen med ID meld-paa-knapp */
+#meld-paa-knapp {
+    display: inline-block; /* Blokknivå for knappen */
+    background-color: #4CAF50; /* Grønn farge */
+    color: white; /* Kvitt tekst */
+    padding: 12px 24px; /* Innvendig avstand */
+    text-decoration: none; /* Fjern understreking */
+    text-transform: uppercase; /* Store bokstavar */
+    font-weight: bold; /* Fet tekst */
+    font-size: 1em; /* Standard tekststorleik */
+    border: none; /* Fjern kantlinje */
+    border-radius: 8px; /* Runde hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skugge for dybdeeffekt */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effekt ved hover */
+    cursor: pointer; /* Endre musepeikar til hand */
+}
+
+#meld-paa-knapp:hover {
+    background-color: #388E3C; /* Mørkare grønn ved hover */
+    transform: translateY(-3px); /* Løft knappen litt opp */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sterkare skugge ved hover */
+}
+
+#meld-paa-knapp:active {
+    background-color: #2E7D32; /* Enda mørkare grønn ved klikk */
+    transform: translateY(0); /* Fjern løft ved klikk */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Mindre skugge ved klikk */
+}
+
+/* Contact form styles */
+/* Stil for kontaktskjema */
+form {
+    display: flex;
+    flex-direction: column; /* Vertikal layout */
+    gap: 10px; /* Avstand mellom element */
+}
+
+label {
+    font-weight: bold; /* Fet tekst for etikettar */
+    margin-bottom: 5px; /* Avstand under etikettar */
+}
+
+input, textarea {
+    padding: 10px; /* Innvendig avstand */
+    border: 1px solid #ccc; /* Lys kantlinje */
+    border-radius: 5px; /* Runde hjørner */
+    font-size: 1em; /* Standard tekststorleik */
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50; /* Grønn kantlinje ved fokus */
+    outline: none; /* Fjern standard outline */
+}
+
+button {
+    margin-top: 10px; /* Avstand over knappen */
 }
 
 /* Responsive design */
