@@ -8,3 +8,17 @@ document.getElementById('meld-paa-knapp').addEventListener('click', () => {
 window.onload = () => {
     console.log('Nettsida er lasta inn.');
 };
+
+// Funksjon for å bytte mellom lys og mørk modus
+document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+    // Bytt mellom å legge til og fjerne klassen "dark-mode" på body
+    document.body.classList.toggle('dark-mode');
+
+    // Oppdater teksten på knappen basert på modus
+    const button = document.getElementById('dark-mode-toggle');
+    if (document.body.classList.contains('dark-mode')) {
+        button.textContent = 'Bytt til lys modus';
+    } else {
+        button.textContent = 'Bytt til mørk modus';
+    }
+});
