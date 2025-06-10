@@ -1,0 +1,219 @@
+/* Global styles */
+/* Generelle stilinnstillingar for nettsida */
+body {
+    font-family: 'Roboto', sans-serif; /* Moderne font for god lesbarheit */
+    margin: 0; /* Fjern standard margin */
+    padding: 0; /* Fjern standard padding */
+    background-color: #f4f4f9; /* Lys bakgrunnsfarge for kontrast */
+    color: #333; /* Mørk tekstfarge for lesbarheit */
+    line-height: 1.6; /* God linjeavstand for tekst */
+}
+
+/* Header styles */
+/* Stil for toppen av nettsida */
+header {
+    background: linear-gradient(90deg, #4CAF50, #81C784); /* Grønn gradient for estetikk */
+    color: white; /* Kvitt tekst for kontrast */
+    padding: 20px; /* Innvendig avstand */
+    text-align: center; /* Midtstill tekst */
+    font-size: 2em; /* Stor tekst for overskrift */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skugge for dybdeeffekt */
+}
+
+header.dark-mode {
+    background: linear-gradient(90deg, #333, #555); /* Mørk gradient for header */
+    color: #f4f4f4; /* Lys tekstfarge */
+}
+
+/* Navigation styles */
+/* Stil for navigasjonsmenyen */
+nav {
+    display: flex; /* Bruk fleksibel layout */
+    justify-content: center; /* Midtstill lenkene */
+    background-color: #333; /* Mørk bakgrunnsfarge */
+    padding: 10px 0; /* Innvendig avstand */
+}
+
+nav a {
+    color: white; /* Kvitt tekst for kontrast */
+    padding: 10px 20px; /* Innvendig avstand rundt lenkene */
+    text-decoration: none; /* Fjern understreking */
+    text-transform: uppercase; /* Store bokstavar for lenkene */
+    font-weight: bold; /* Fet tekst for synlegheit */
+    transition: background-color 0.3s ease; /* Effekt ved hover */
+}
+
+nav a:hover {
+    background-color: #4CAF50; /* Grønn farge ved hover */
+    border-radius: 5px; /* Runde hjørner for estetikk */
+}
+
+nav.dark-mode {
+    background-color: #222; /* Mørk bakgrunnsfarge for navigasjon */
+}
+
+nav.dark-mode a {
+    color: #f4f4f4; /* Lys tekstfarge for lenker */
+}
+
+/* Main content styles */
+/* Stil for hovudinnhaldet */
+main {
+    padding: 20px; /* Innvendig avstand */
+    max-width: 1200px; /* Maks breidde for innhald */
+    margin: auto; /* Midtstill innhaldet */
+}
+
+/* Card styles */
+/* Stil for kort som viser informasjon */
+.card {
+    background-color: white; /* Kvitt bakgrunn */
+}
+
+.card.dark-mode {
+    background-color: #1e1e1e; /* Mørk bakgrunnsfarge for kort */
+    color: #f4f4f4; /* Lys tekstfarge */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Mørkare skugge */
+}
+
+/* Team section styles */
+/* Stil for teamseksjonen */
+.team {
+    display: flex; /* Bruk fleksibel layout */
+    gap: 20px; /* Avstand mellom teammedlemmar */
+    flex-wrap: wrap; /* La element bryte til ny rad ved behov */
+}
+
+.team-member {
+    flex: 1 1 calc(33.333% - 20px); /* Breidde for teammedlem */
+    text-align: center; /* Midtstill tekst */
+}
+
+.team-image {
+    width: 100px; /* Bredde på bilete */
+    height: 100px; /* Høgde på bilete */
+    border-radius: 50%; /* Runde bilete */
+    object-fit: cover; /* Klipp bilete for å passe inn */
+    margin-bottom: 10px; /* Avstand under bilete */
+}
+
+/* Footer styles */
+/* Stil for bunnteksten */
+footer {
+    background-color: #333; /* Mørk bakgrunnsfarge */
+    color: white; /* Kvitt tekst for kontrast */
+    text-align: center; /* Midtstill tekst */
+    padding: 10px 0; /* Innvendig avstand */
+    position: relative; /* Posisjonering for absolutt plasserte element */
+    bottom: 0; /* Plasser bunnen av footer i botn av sida */
+    width: 100%; /* Full breidde */
+}
+
+/* Button styles */
+/* Stil for knappar */
+.button {
+    display: inline-block; /* Blokknivå for knappen */
+    background-color: #4CAF50; /* Grønn farge */
+    color: white; /* Kvitt tekst */
+    padding: 12px 24px; /* Innvendig avstand */
+    text-decoration: none; /* Fjern understreking */
+    text-transform: uppercase; /* Store bokstavar */
+    font-weight: bold; /* Fet tekst */
+    font-size: 1em; /* Standard tekststorleik */
+    border: none; /* Fjern kantlinje */
+    border-radius: 8px; /* Runde hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skugge for dybdeeffekt */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effekt ved hover */
+    cursor: pointer; /* Endre musepeikar til hand */
+}
+
+.button:hover {
+    background-color: #388E3C; /* Mørkare grønn ved hover */
+    transform: translateY(-3px); /* Løft knappen litt opp */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sterkare skugge ved hover */
+}
+
+.button:active {
+    background-color: #2E7D32; /* Enda mørkare grønn ved klikk */
+    transform: translateY(0); /* Fjern løft ved klikk */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Mindre skugge ved klikk */
+}
+
+/* Design for knappen med ID meld-paa-knapp */
+#meld-paa-knapp {
+    display: inline-block; /* Blokknivå for knappen */
+    background-color: #4CAF50; /* Grønn farge */
+    color: white; /* Kvitt tekst */
+    padding: 12px 24px; /* Innvendig avstand */
+    text-decoration: none; /* Fjern understreking */
+    text-transform: uppercase; /* Store bokstavar */
+    font-weight: bold; /* Fet tekst */
+    font-size: 1em; /* Standard tekststorleik */
+    border: none; /* Fjern kantlinje */
+    border-radius: 8px; /* Runde hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skugge for dybdeeffekt */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effekt ved hover */
+    cursor: pointer; /* Endre musepeikar til hand */
+}
+
+#meld-paa-knapp:hover {
+    background-color: #388E3C; /* Mørkare grønn ved hover */
+    transform: translateY(-3px); /* Løft knappen litt opp */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sterkare skugge ved hover */
+}
+
+#meld-paa-knapp:active {
+    background-color: #2E7D32; /* Enda mørkare grønn ved klikk */
+    transform: translateY(0); /* Fjern løft ved klikk */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Mindre skugge ved klikk */
+}
+
+/* Contact form styles */
+/* Stil for kontaktskjema */
+form {
+    display: flex;
+    flex-direction: column; /* Vertikal layout */
+    gap: 10px; /* Avstand mellom element */
+}
+
+label {
+    font-weight: bold; /* Fet tekst for etikettar */
+    margin-bottom: 5px; /* Avstand under etikettar */
+}
+
+input, textarea {
+    padding: 10px; /* Innvendig avstand */
+    border: 1px solid #ccc; /* Lys kantlinje */
+    border-radius: 5px; /* Runde hjørner */
+    font-size: 1em; /* Standard tekststorleik */
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50; /* Grønn kantlinje ved fokus */
+    outline: none; /* Fjern standard outline */
+}
+
+button {
+    margin-top: 10px; /* Avstand over knappen */
+}
+
+/* Responsive design */
+/* Stil for mindre skjermstorleikar */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Vertikal layout for navigasjon */
+    }
+
+    nav a {
+        text-align: center; /* Midtstill lenkene */
+        padding: 10px; /* Mindre padding for mobil */
+    }
+
+    main {
+        padding: 10px; /* Mindre padding for mobil */
+    }
+
+    .team-member {
+        flex: 1 1 100%; /* Full breidde for teammedlemmar */
+    }
+}
