@@ -9,12 +9,6 @@ body {
     line-height: 1.6; /* God linjeavstand for tekst */
 }
 
-/* Mørk modus */
-body.dark-mode {
-    background-color: #121212; /* Mørk bakgrunnsfarge */
-    color: #f4f4f4; /* Lys tekstfarge */
-}
-
 /* Header styles */
 /* Stil for toppen av nettsida */
 header {
@@ -113,11 +107,6 @@ footer {
     position: relative; /* Posisjonering for absolutt plasserte element */
     bottom: 0; /* Plasser bunnen av footer i botn av sida */
     width: 100%; /* Full breidde */
-}
-
-footer.dark-mode {
-    background-color: #222; /* Mørk bakgrunnsfarge for footer */
-    color: #f4f4f4; /* Lys tekstfarge */
 }
 
 /* Button styles */
