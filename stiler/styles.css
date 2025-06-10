@@ -8,7 +8,7 @@ body {
     line-height: 1.6; /* God linjeavstand for tekst */
 }
 
-/* Header styles */
+
 /* Stil for toppen av nettsida */
 header {
     background: linear-gradient(90deg, #4CAF50, #81C784); /* Grønn gradient for estetikk */
@@ -24,7 +24,7 @@ header.dark-mode {
     color: #f4f4f4; /* Lys tekstfarge */
 }
 
-/* Navigation styles */
+
 /* Stil for navigasjonsmenyen */
 nav {
     display: flex; /* Bruk fleksibel layout */
@@ -55,7 +55,7 @@ nav.dark-mode a {
     color: #f4f4f4; /* Lys tekstfarge for lenker */
 }
 
-/* Main content styles */
+
 /* Stil for hovudinnhaldet */
 main {
     padding: 20px; /* Innvendig avstand */
@@ -63,7 +63,7 @@ main {
     margin: auto; /* Midtstill innhaldet */
 }
 
-/* Card styles */
+
 /* Stil for kort som viser informasjon */
 .card {
     background-color: white; /* Kvitt bakgrunn */
@@ -75,7 +75,7 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Mørkare skugge */
 }
 
-/* Team section styles */
+
 /* Stil for teamseksjonen */
 .team {
     display: flex; /* Bruk fleksibel layout */
@@ -96,7 +96,7 @@ main {
     margin-bottom: 10px; /* Avstand under bilete */
 }
 
-/* Footer styles */
+
 /* Stil for bunnteksten */
 footer {
     background-color: #333; /* Mørk bakgrunnsfarge */
@@ -108,7 +108,7 @@ footer {
     width: 100%; /* Full breidde */
 }
 
-/* Button styles */
+
 /* Stil for knappar */
 .button {
     display: inline-block; /* Blokknivå for knappen */
@@ -167,7 +167,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Mindre skugge ved klikk */
 }
 
-/* Contact form styles */
+
 /* Stil for kontaktskjema */
 form {
     display: flex;
@@ -196,7 +196,7 @@ button {
     margin-top: 10px; /* Avstand over knappen */
 }
 
-/* Responsive design */
+
 /* Stil for mindre skjermstorleikar */
 @media (max-width: 768px) {
     nav {
