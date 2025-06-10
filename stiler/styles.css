@@ -1,91 +1,152 @@
 /* Global styles */
+/* Generelle stilinnstillingar for nettsida */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Moderne font for god lesbarheit */
+    margin: 0; /* Fjern standard margin */
+    padding: 0; /* Fjern standard padding */
+    background-color: #f4f4f9; /* Lys bakgrunnsfarge for kontrast */
+    color: #333; /* Mørk tekstfarge for lesbarheit */
+    line-height: 1.6; /* God linjeavstand for tekst */
 }
 
 /* Header styles */
+/* Stil for toppen av nettsida */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
-    font-size: 1.5em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #4CAF50, #81C784); /* Grønn gradient for estetikk */
+    color: white; /* Kvitt tekst for kontrast */
+    padding: 20px; /* Innvendig avstand */
+    text-align: center; /* Midtstill tekst */
+    font-size: 2em; /* Stor tekst for overskrift */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skugge for dybdeeffekt */
 }
 
 /* Navigation styles */
+/* Stil for navigasjonsmenyen */
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
+    display: flex; /* Bruk fleksibel layout */
+    justify-content: center; /* Midtstill lenkene */
+    background-color: #333; /* Mørk bakgrunnsfarge */
+    padding: 10px 0; /* Innvendig avstand */
 }
 
 nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
+    color: white; /* Kvitt tekst for kontrast */
+    padding: 10px 20px; /* Innvendig avstand rundt lenkene */
+    text-decoration: none; /* Fjern understreking */
+    text-transform: uppercase; /* Store bokstavar for lenkene */
+    font-weight: bold; /* Fet tekst for synlegheit */
+    transition: background-color 0.3s ease; /* Effekt ved hover */
 }
 
 nav a:hover {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* Grønn farge ved hover */
+    border-radius: 5px; /* Runde hjørner for estetikk */
 }
 
 /* Main content styles */
+/* Stil for hovudinnhaldet */
 main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+    padding: 20px; /* Innvendig avstand */
+    max-width: 1200px; /* Maks breidde for innhald */
+    margin: auto; /* Midtstill innhaldet */
 }
 
 /* Card styles */
+/* Stil for kort som viser informasjon */
 .card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    padding: 20px;
+    background-color: white; /* Kvitt bakgrunn for kontrast */
+    border-radius: 10px; /* Runde hjørner for estetikk */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skugge for dybdeeffekt */
+    margin: 20px 0; /* Avstand mellom kort */
+    padding: 20px; /* Innvendig avstand */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effekt ved hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Løft kortet ved hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sterkare skugge ved hover */
 }
 
 .card h2 {
-    margin-top: 0;
-    color: #4CAF50;
+    margin-top: 0; /* Fjern toppmargin */
+    color: #4CAF50; /* Grønn farge for overskrift */
 }
 
 .card p {
-    margin: 10px 0;
+    margin: 10px 0; /* Avstand mellom avsnitt */
+}
+
+/* Team section styles */
+/* Stil for teamseksjonen */
+.team {
+    display: flex; /* Bruk fleksibel layout */
+    gap: 20px; /* Avstand mellom teammedlemmar */
+    flex-wrap: wrap; /* La element bryte til ny rad ved behov */
+}
+
+.team-member {
+    flex: 1 1 calc(33.333% - 20px); /* Breidde for teammedlem */
+    text-align: center; /* Midtstill tekst */
+}
+
+.team-image {
+    width: 100px; /* Bredde på bilete */
+    height: 100px; /* Høgde på bilete */
+    border-radius: 50%; /* Runde bilete */
+    object-fit: cover; /* Klipp bilete for å passe inn */
+    margin-bottom: 10px; /* Avstand under bilete */
 }
 
 /* Footer styles */
+/* Stil for bunnteksten */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #333; /* Mørk bakgrunnsfarge */
+    color: white; /* Kvitt tekst for kontrast */
+    text-align: center; /* Midtstill tekst */
+    padding: 10px 0; /* Innvendig avstand */
+    position: relative; /* Posisjonering for absolutt plasserte element */
+    bottom: 0; /* Plasser bunnen av footer i botn av sida */
+    width: 100%; /* Full breidde */
+}
+
+/* Button styles */
+/* Stil for knappar */
+.button {
+    display: inline-block; /* Blokknivå for knappen */
+    background-color: #4CAF50; /* Grønn farge */
+    color: white; /* Kvitt tekst */
+    padding: 10px 20px; /* Innvendig avstand */
+    text-decoration: none; /* Fjern understreking */
+    text-transform: uppercase; /* Store bokstavar */
+    font-weight: bold; /* Fet tekst */
+    border-radius: 5px; /* Runde hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skugge for dybdeeffekt */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effekt ved hover */
+}
+
+.button:hover {
+    background-color: #388E3C; /* Mørkare grønn ved hover */
+    transform: translateY(-3px); /* Løft knappen litt opp */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sterkare skugge ved hover */
 }
 
 /* Responsive design */
+/* Stil for mindre skjermstorleikar */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: column; /* Vertikal layout for navigasjon */
     }
 
     nav a {
-        text-align: center;
-        padding: 10px;
+        text-align: center; /* Midtstill lenkene */
+        padding: 10px; /* Mindre padding for mobil */
     }
 
     main {
-        padding: 10px;
+        padding: 10px; /* Mindre padding for mobil */
+    }
+
+    .team-member {
+        flex: 1 1 100%; /* Full breidde for teammedlemmar */
     }
 }
