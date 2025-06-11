@@ -23,8 +23,13 @@ Prosjektet er organisert med følgande mapper og filer:
 |   |-- lærer.png
 |   |-- rektor.png
 |
+|   /brukerstøtte
+|   |-- Steg 1 TrueNAS.md
+|   |-- Steg 2 nettverkskontroll.md
+|
 |-- /html
 |   |-- index.html
+|   |-- internettkart.html
 |   |-- kontakt.html
 |   |-- lanseringsfest.html
 |   |-- personvern.html
@@ -36,10 +41,9 @@ Prosjektet er organisert med følgande mapper og filer:
 |   |-- styles.css
 |
 |-- kjelder.md
-|-- nettverkskontroll.md
 |-- README.md
 |-- teknisk dokument.md
-|-- TrueNAS.md
+
 ```
 ---
 

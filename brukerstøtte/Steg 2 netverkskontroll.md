@@ -65,7 +65,7 @@ Dersom eininga ikkje er adoptert:
 1. Sjå om UniFi-eininga di brukar **DHCP** som standard.
 2. Dersom du vil bruke statisk IP:
    - Set **IPv4-adresse** til ein IP innanfor ditt nettverk (anbefalt: IP-adressa som allereie var gitt).
-   - Set **Subnet-mask** til `255.255.255.0`.
+   - Set **subnet-mask** til `255.255.255.0` eller `255.0.0.0`, alt etter kor mange IP-adresser du vil tillate i nettverket.
    - Set **Gateway** til rutaren sin gateway.
    - Set **DNS**:
      - **8.8.8.8** (Google)
@@ -93,5 +93,7 @@ Då har du VLAN-et ditt.
 3. Vel namn (t.d. *Elev*).
 4. Vel tilgangen som det VLAN-et skal ha (Tagged VLAN Management).
 5. Trykk på **Apply Changes**.
-
 ---
+
+For å sette opp nettverkskontoll så drar du til steg 2.
+Har du spørsmål? ta kontakt på [e-post](mailto:nickeike@outlook.com) eller ring 919 95 753
