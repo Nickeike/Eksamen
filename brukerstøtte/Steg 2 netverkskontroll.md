@@ -95,5 +95,4 @@ Då har du VLAN-et ditt.
 5. Trykk på **Apply Changes**.
 ---
 
-For å sette opp nettverkskontoll så drar du til steg 2.
 Har du spørsmål? ta kontakt på [e-post](mailto:nickeike@outlook.com) eller ring 919 95 753
