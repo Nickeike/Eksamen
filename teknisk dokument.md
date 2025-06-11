@@ -40,6 +40,7 @@ Prosjektet er organisert med følgande mapper og filer:
 |-- /stiler
 |   |-- styles.css
 |
+|-- brukerstøtte.zip
 |-- kjelder.md
 |-- README.md
 |-- teknisk dokument.md
