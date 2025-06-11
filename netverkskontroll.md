@@ -93,5 +93,5 @@ Då har du VLAN-et ditt.
 3. Vel namn (t.d. *Elev*).
 4. Vel tilgangen som det VLAN-et skal ha (Tagged VLAN Management).
 5. Trykk på **Apply Changes**.
-
 ---
+Har du spørsmål? ta kontakt på [e-post](mailto:nickeike@outlook.com) eller ring 919 95 753
