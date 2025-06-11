@@ -1,6 +1,6 @@
 # **Nettverkskontroll i TrueNAS**
 
-Etter du har konfigurert **TrueNAS**, kan du sette opp **UniFi Controller** for nettverksadministrasjon.
+Etter at du har konfigurert **TrueNAS**, kan du setje opp **UniFi Controller** for nettverksadministrasjon.
 
 ---
 
@@ -18,7 +18,7 @@ Når du har **registrert brukarnamn og passord**, kan du starte installasjonen.
 4. Vel **Choose pool**.
 5. Vel den **poolen** du vil bruke.
 
-Vent til app-tenesta startar. Du vil sjå eit **hake-symbol** som bekreftar at ho køyrer.  
+Vent til app-tenesta startar. Du vil sjå eit **hake-symbol** som stadfestar at ho køyrer.  
 
 Når tenesta køyrer:
 1. Venstreklikk på **Discover Apps**.
@@ -41,7 +41,7 @@ Når UniFi Controller køyrer:
 2. Trykk på **Web-UI**.
 3. Logg inn med **UniFi-brukarnamnet og passordet ditt**.
 
-Når du er inne i **UniFi GUI**, kan du konfigurere **UniFi-servernamnet** etter ønske (t.d. *Skulenett*).  
+Når du er inne i **UniFi GUI**, kan du konfigurere **UniFi-servernamnet** etter ønskje (t.d. *Skulenett*).  
 
 For å sjekke status:
 - Gå til [UniFi Cloud](https://unifi.ui.com/) og sjå om **serveren er aktiv**.  
@@ -49,25 +49,25 @@ For å sjekke status:
 
 ---
 
-## **Kople til UniFi-enheiter**
+## **Kople til UniFi-einingar**
 Når du har suksessfullt kopla deg til serveren:
 1. Trykk på **ikonet med ein sirkel inni** (ser ut som eit aksesspunkt).
-2. Sjå at **UniFi-enheten er kopla til same nettverk** som TrueNAS-serveren.
+2. Sjå at **UniFi-eininga er kopla til same nettverk** som TrueNAS-serveren.
 
-Dersom enheten ikkje er adoptert:
+Dersom eininga ikkje er adoptert:
 1. Venstreklikk på **Adopt**-knappen.
-2. Venstreklikk på UniFi-enheten din.
+2. Venstreklikk på UniFi-eininga di.
 3. Trykk på tannhjulet for innstillingar.
 
 ---
 
-## **Sette opp statisk IP-adresse**
-1. Sjå om UniFi-enheten din bruker **DHCP** som standard.
+## **Setje opp statisk IP-adresse**
+1. Sjå om UniFi-eininga di brukar **DHCP** som standard.
 2. Dersom du vil bruke statisk IP:
-   - Sett **IPv4-adresse** til ein IP innanfor ditt nettverk (anbefalt: IP-adressa som allereie var gitt).
-   - Sett **Subnet-mask** til `255.255.255.0`.
-   - Sett **Gateway** til ruteren sin gateway.
-   - Sett **DNS**:
+   - Set **IPv4-adresse** til ein IP innanfor ditt nettverk (anbefalt: IP-adressa som allereie var gitt).
+   - Set **Subnet-mask** til `255.255.255.0`.
+   - Set **Gateway** til rutaren sin gateway.
+   - Set **DNS**:
      - **8.8.8.8** (Google)
      - **8.8.4.4** (Google alternativ)
      - **1.1.1.1** (Cloudflare)
@@ -79,8 +79,19 @@ Dersom enheten ikkje er adoptert:
 1. **Trykk på tannhjulet** til venstre.
 2. Gå til **Networks**.
 3. Trykk på **New Virtual Network**.
-4. Vel namn, VLAN-nummer og sikkerheitsinnstillingar:
+4. Vel namn, VLAN-nummer og tryggleiksinnstillingar:
    - **IGMP Snooping**
    - **DHCP Guarding**
+5. Trykk **Add**  
+Då har du VLAN-et ditt.
+
+---
+
+## **Reglar for VLAN**
+1. Trykk på **Profiles**.
+2. Trykk på **Create New**.
+3. Vel namn (t.d. *Elev*).
+4. Vel tilgangen som det VLAN-et skal ha (Tagged VLAN Management).
+5. Trykk på **Apply Changes**.
 
 ---
