@@ -25,6 +25,7 @@ Prosjektet er organisert med følgande mapper og filer:
 |
 |-- /html
 |   |-- index.html
+|   |-- internettkart.html
 |   |-- kontakt.html
 |   |-- lanseringsfest.html
 |   |-- personvern.html
