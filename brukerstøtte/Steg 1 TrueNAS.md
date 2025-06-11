@@ -170,4 +170,7 @@ Dersom du berre treng **fildeling**, er det lurt å sette opp **S.M.A.R.T.-testa
 
 ---
 
+Visst du skal sette opp nettverkskontroll
+
+
 Har du spørsmål? ta kontakt på [e-post](mailto:nickeike@outlook.com) eller ring 919 95 753
